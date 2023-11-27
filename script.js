@@ -38,7 +38,7 @@ async function generateComicPanel(text) {
 // Define the function to display a comic panel on the page
 function displayComicPanel(imageBlob, index) {
   // Create a URL from the image blob
-  // const imageUrl = URL.createObjectURL(imageBlob);
+  const imageUrl = URL.createObjectURL(imageBlob);
 
   // container for image and konva stage
   const container = document.createElement("div");
@@ -50,7 +50,7 @@ function displayComicPanel(imageBlob, index) {
   comicDisplay.appendChild(container);
     
   // dummy image
-  const imageUrl = "https://picsum.photos/512/512";
+  // const imageUrl = "https://picsum.photos/512/512";
 
   // Create an image element
   const image = document.createElement("img");
@@ -287,10 +287,10 @@ async function generateComic(event) {
     const text = input.value;
 
     // Generate a comic panel from the input value
-    // const imageBlob = await generateComicPanel(text);
+    const imageBlob = await generateComicPanel(text);
 
     // dummy image
-    const imageBlob = "https://picsum.photos/512/512";
+    // const imageBlob = "https://picsum.photos/512/512";
 
     // Display the comic panel on the page
     displayComicPanel(imageBlob, i + 1);
