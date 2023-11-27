@@ -99,18 +99,6 @@ function displayComicPanel(imageBlob, index) {
   function addSpeechBubble() {
     // Prompt the user to enter the text for the speech bubble
     const text = prompt("Enter the text for the speech bubble:");
-    // add line break to text if it is too long
-    const textArr = text.split(" ");
-    const textArrLength = textArr.length;
-    let textArr1 = [];
-    let textArr2 = [];
-    if (textArrLength > 5) {
-      textArr1 = textArr.slice(0, 5);
-      textArr2 = textArr.slice(5, textArrLength);
-      textArr1.push("\n");
-      textArr1.push(...textArr2);
-    }
-    const text1 = textArr1.join(" ");
     
     // If the text is not empty, proceed
     if (text) {
@@ -142,7 +130,7 @@ function displayComicPanel(imageBlob, index) {
       // Add a Konva text to the label
       label.add(
         new Konva.Text({
-          text: text1,
+          text: text,
           fontFamily: "Arial",
           fontSize: 14,
           padding: 10,
