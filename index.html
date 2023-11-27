@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comic Generator</h1>
+        <p>Enter text for 10 comic panels and click Generate to create a comic strip.</p>
+        <form id="comic-form">
+            <div class="input-group">
+                <label for="panel-1">Panel 1</label>
+                <input type="text" id="panel-1" name="panel-1" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-2">Panel 2</label>
+                <input type="text" id="panel-2" name="panel-2" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-3">Panel 3</label>
+                <input type="text" id="panel-3" name="panel-3" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-4">Panel 4</label>
+                <input type="text" id="panel-4" name="panel-4" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-5">Panel 5</label>
+                <input type="text" id="panel-5" name="panel-5" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-6">Panel 6</label>
+                <input type="text" id="panel-6" name="panel-6" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-7">Panel 7</label>
+                <input type="text" id="panel-7" name="panel-7" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-8">Panel 8</label>
+                <input type="text" id="panel-8" name="panel-8" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-9">Panel 9</label>
+                <input type="text" id="panel-9" name="panel-9" required>
+            </div>
+            <div class="input-group">
+                <label for="panel-10">Panel 10</label>
+                <input type="text" id="panel-10" name="panel-10" required>
+            </div>
+            <button type="submit" id="generate-btn">Generate</button>
+        </form>
+        <div class="comic-board" id="comic-display">
+            <!-- The comic panels will be displayed here -->
+        </div>
+        <!-- <button id="download-btn" hidden>Download as PDF</button> -->
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/konva/8.4.2/konva.min.js"></script>
+</body>
+</html>
