@@ -181,3 +181,10 @@ p {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+
+/* Styling for the text annotation prompt */
+.annotation-prompt {
+    z-index: 1000;
+    position: absolute;
+    cursor: pointer;
+}
